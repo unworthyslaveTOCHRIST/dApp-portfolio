@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer utilities{
+  @media (min-width: 769px) {
+    .wide-screen {min-height: calc(100vh - 68px); }
+  }
+  @media (max-width: 768px ) {
+    .tall-screen {min-height: calc(100vh - 68px);}
+  } 
+
+  @keyframes bounce-for-christ {
+    0%,100% {
+      transform: translateY(-5%);
+      /* transform: rotateZ(20deg); */
+    }
+    50% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes open-menu{
+    0% {
+        transform: scaleY(0);
+    }
+    80%{
+        transform: scaleY(1.2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+  }
+
+  .animate-bounce-for-christ {
+    /* animation-name: bounce-for-christ;
+    animation-duration: 1s;
+    /* animation-delay: -2s; To be graciously considered later on*/
+    /* animation-iteration-count: infinite;
+    animation-timing-function: ease;  To be graciously considered later on*/
+    animation: bounce-for-christ 1s infinite;
+  }
+
+  .animate-open-menu{
+    animation-name: open-menu;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    /* animation-delay: 0.1s */
+  }
+
+  .toggle-btn{
+    &>div::before {
+      transform: translateY(0.75rem) rotate(45deg);
+    } 
+    &>div::after {
+      transform: translateY(-0.75rem) rotate(-45deg);
+    } 
+    &>div{
+      background-color: transparent;
+      transform: rotate(720deg);
+    }
+  }
+}
+
+
+

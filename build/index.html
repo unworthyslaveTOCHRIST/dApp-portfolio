@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="bg-teal-700 text-white sticky top-0 z-10">
+      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">🚀 unworthy slave To Christ </a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="text-3xl md:hidden cursor-pointer relative w-8 h-8"
+          >
+            <!-- &#9776; -->
+            <div
+              class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 before:content-[''] before:bg-white before:h-1 before:rounded before:w-8 before:absolute before:-translate-x-4 before:-translate-y-3 after:content-[''] after:bg-white after:h-1 after:rounded after:w-8 after:absolute after:-translate-x-4 after:translate-y-3 transition-all duration-500 before:transition-all after:transition-all after:duration-500 before:duration-500"
+            ></div>
+          </button>
+          <nav
+            class="hidden md:block space-x-8 text-xl overflow-visible"
+            aria-label="main"
+          >
+            <a href="#projects" class="hover:opacity-90">Projects</a>
+            <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+            <a href="#contact" class="hover:opacity-90">Contact Me</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-25 bg-blue-900 w-full text-5xl flex-col justify-center animate-open-menu hidden md:hidden"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-90"
+            >Home</a
+          >
+          <a href="#projects" class="w-full text-center py-6 hover:opacity-90"
+            >Projects</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center py-6 hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-90"
+            >Contact Me</a
+          >
+          <a href="#footer" class="w-full text-center py-6 hover:opacity-90"
+            >Legal</a
+          >
+        </nav>
+      </section>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+      <section
+        id="hero"
+        class="scroll-mt-40 flex flex-col-reverse justify-center md:flex-row p-6 items-center gap-8 mb-12 wide-screen tall-screen"
+      >
+        <article class="md:w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left text-slate-900 dark:text-white"
+          >
+            <span class="text-red-500">Junior</span> Full Stack
+            <span class="text-indigo-700 dark:text-indigo-300">
+              Solidity Developer</span
+            >
+          </h2>
+          <p
+            class="max-w-md text-2xl mt-4 text-center text-slate-700 dark:text-slate-400"
+          >
+            I develop complete decentralized applications that run on the
+            Ethereum blockchain.
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center text-slate-700 dark:text-slate-400"
+          >
+            I can enhance your blockchain business with AI capabilities.
+          </p>
+        </article>
+        <img
+          class="w-1/2 animate-bounce-for-christ"
+          src="./img/rocketdab.png"
+          alt="Rocket Dab"
+        />
+      </section>
+
+      <hr class="mx-auto bg-black dark-bg-white w-1/2" />
+
+      <section
+        id="projects"
+        class="p-6 my-12 scroll-mt-40 wide-screen tall-screen"
+      >
+        <h2
+          class="text-4xl font-bold text-center md:text-5xl mb-6 text-slate-600 dark:text-white"
+        >
+          Projects
+        </h2>
+        <ul
+          class="list-none mx-auto my-12 flex flex-col md:flex-row items-center gap-8"
+        >
+          <li
+            class="w-2/3 md:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl dark:bg-black"
+          >
+            <img src="./img/rocketman.png" alt="dApp" class="mb-6 w-1/2" />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              dApp
+            </h3>
+            <p
+              class="hidden md:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400"
+            >
+              #1
+            </p>
+            <p
+              class="text-2xl mt-2 text-center text-slate-500 dark:text-slate-400 md:hidden"
+            >
+              Uniswap Clone
+            </p>
+          </li>
+          <li
+            class="w-2/3 md:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl dark:bg-black"
+          >
+            <img src="./img/rocketride.png" alt="dAO" class="mb-6 w-1/2" />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              dAO
+            </h3>
+            <p
+              class="hidden md:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400"
+            >
+              #2
+            </p>
+            <p
+              class="md:hidden text-2xl mt-2 text-center text-slate-500 dark:text-slate-400"
+            >
+              Block Explorer
+            </p>
+          </li>
+          <li
+            class="w-2/3 md:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl dark:bg-black"
+          >
+            <img
+              src="./img/rocketlaunch.png"
+              alt="deFi(NFT)"
+              class="mb-6 w-1/2"
+            />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              NFT - deFi
+            </h3>
+            <p
+              class="hidden md:block text-3xl mt-2 text-center text-slate-500 dark:text-slate-400"
+            >
+              #3
+            </p>
+            <p
+              class="md:hidden text-2xl mt-2 text-center text-slate-500 dark:text-slate-400"
+            >
+              NFT Chess
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="mx-auto bg-black dark-bg-white w-1/2" />
+
+      <section
+        id="testimonials"
+        class="p-6 my-12 scroll-mt-40 wide-screen tall-screen"
+      >
+        <h2
+          class="text-4xl font-bold text-center md:text-5xl mb-6 text-slate-600 dark:text-white"
+        >
+          Testimonials
+        </h2>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-400 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl md:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              unworthy slave To Christ is by The Lord to be a Blockchain
+              engineer. unworthy slave To Christ is by The Lord to be a
+              Blockchain engineer unworthy slave To Christ is by The Lord to be
+              a Blockchain engineer
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl md:text-2xl text-right mt-5 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; unworthy slave To Christ
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-400 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl md:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              unworthy slave To Christ is by The Lord to be a Blockchain
+              engineer. unworthy slave To Christ is by The Lord to be a
+              Blockchain engineer unworthy slave To Christ is by The Lord to be
+              a Blockchain engineer
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl md:text-2xl text-right mt-5 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; unworthy slave To Christ
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote
+            class="bg-teal-400 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+          >
+            <p
+              class="text-2xl md:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              unworthy slave To Christ is by The Lord to be a Blockchain
+              engineer. unworthy slave To Christ is by The Lord to be a
+              Blockchain engineer unworthy slave To Christ is by The Lord to be
+              a Blockchain engineer
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl md:text-2xl text-right mt-5 text-slate-500 dark:text-slate-400"
+          >
+            &#8212; unworthy slave To Christ
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr class="mx-auto bg-black dark-bg-white w-1/2" />
+
+      <section
+        id="contact"
+        class="p-6 my-12 scroll-mt-16 wide-screen tall-screen"
+      >
+        <h2
+          class="text-4xl font-bold text-center md:text-5xl mb-6 text-slate-600 dark:text-white"
+        >
+          Contact Me
+        </h2>
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl md:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="email"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="600"
+            placeholder="Your Subject"
+            class="w-full text-black text-2xl md:text-3xl p-3 rounded-xl border border-solid border-slate-900 bg-white dark:border-none"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+            class="w-full text-black text-2xl md:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none bg-white"
+          ></textarea>
+
+          <buttton
+            class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none text-center"
+            >Submit</buttton
+          >
+        </form>
+      </section>
+    </main>
+
+    <footer id="idfooter" class="bg-teal-700 text-white text-sl">
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col md:flex-row md:justify-between"
+      >
+        <address>
+          <h2>unworthy slave To Christ</h2>
+          <br />
+          Email:
+          <a href="mailto:righteousnessbyfaithinjesus@gmail.com"
+            >righteousnessbyfaithinjesus@gmail.com</a
+          >
+          <br />
+          Phone:
+          <a href="tel:+2349049092821">+234-90-4909-2821</a>
+        </address>
+        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+          <a href="#projects" class="hover:opacity-90">See Projects</a>
+          <a href="#testimonials">See Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col md:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2025</span></p>
+          <p class="text-right">All rights reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
