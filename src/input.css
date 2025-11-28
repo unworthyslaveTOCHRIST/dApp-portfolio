@@ -29,6 +29,10 @@
         transform: scaleY(1);
     }
   }
+  .gtljc_dev_name{
+    /* animation: bounce-for-christ 1s infinite; */
+    font-size: 4vh;
+  }
 
   .animate-bounce-for-christ {
     /* animation-name: bounce-for-christ;
@@ -60,6 +64,103 @@
       transform: rotate(720deg);
     }
   }
+
+
+  .icons-forChristAlone{
+    display: inline-block;
+    border-radius: 50%;
+    height: 5vh;
+    background-color: blue;
+  }
+
+section{
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgIcon {
+    display : inline;
+    border-radius: 50%;
+    /* opacity : 70%; */
+    height: 10vh;
+    position: absolute;
+    animation: img_not_rotate 20s linear infinite
+
+}
+
+.imgIcon:nth-child(1){ top:-10%; left: 40%;}
+.imgIcon:nth-child(2){ top:40%; left: -10%;}
+.imgIcon:nth-child(3){ top:40%; left: 90%;}
+.imgIcon:nth-child(4){ top:90%; left: 40%;}
+
+.container{
+    /* border: 3px solid green; */
+    height : 50vh;
+    width : 50vh;
+    position: relative;
+    margin: 10vh auto 10vh;
+
+}
+.changed_border{
+  border: 10px dashed rgb(97, 97, 237);
+}
+.img_container{
+    border: 10px dashed brown;
+    padding : 20px;
+    border-radius: 50%;
+    height : 120%;
+    width : 120%;
+    /* overflow : hidden; */
+    position: relative;
+    animation: rotate_ 20s linear infinite;
+    margin-left: -5vh;
+    margin-right: auto;
+    
+}
+.graciousPortfolioImg{
+  height : 120%;
+  position: relative;
+  left: 3vh;
+  top: -6vh;
+  z-index: -10;
+
+
+}
+
+.centered_image{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    /* border: 4px solid pink; */
+    height: 80%;
+    width : 80%;
+    margin-left: -5vh;
+    filter:drop-shadow( 0px 0px 30px #4444dd);
+    /* filter:drop-shadow( 0px 10px 10px #4444dd); */
+    /* filter:drop-shadow( 0px 10px 70px rgb(198, 221, 68)); */
+    z-index: -10;
+}
+
+
+
+@keyframes rotate_ {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform : rotate(360deg)
+    }
+}
+
+@keyframes img_not_rotate{
+    from{
+       transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
 }
 
 
