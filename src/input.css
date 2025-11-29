@@ -31,7 +31,9 @@
   }
   .gtljc_dev_name{
     /* animation: bounce-for-christ 1s infinite; */
-    font-size: 4vh;
+    /* font-size: 4vw; */
+    width : 100%;
+    font-size: 2rem
   }
 
   .animate-bounce-for-christ {
@@ -143,6 +145,7 @@ section{
 
 
 
+
 @keyframes rotate_ {
     from {
         transform: rotate(0deg);
@@ -160,6 +163,20 @@ section{
         transform: rotate(-360deg)
     }
 }
+
+  .gtljc_pulsing_text{
+    animation: pulsation_FORCHRISTALONE 1s ease-in-out 0s infinite ;
+  
+  }
+
+  @keyframes pulsation_FORCHRISTALONE{
+    from {
+      color: red;
+    }
+    to {
+      color : blue;
+    }
+  }
 
 }
 

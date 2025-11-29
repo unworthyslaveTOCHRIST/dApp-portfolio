@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="background-color: rgb(242,239,234); padding-top: 10vh; padding-bottom: 10vh;">
+        <img src="./img/first_main_portfolio_picture.png" style = "border-radius: 50%; height : 80vh; margin-left: auto; margin-right: auto; display: block " alt="">
+        <input type="color">
+     </div>
+</body>
+</html>
+
+.gtljc_pulsing_text{
+    animation: pulsation_FORCHRISTALONE 1s ease-in-out 0s infinite ;
+  
+  }
+
+  @keyframes pulsation_FORCHRISTALONE{
+    from {
+      color: red;
+    }
+    to {
+      color : blue;
+    }
+  }
+
+  <p class="text-center mt-5 italic font-bold gtljc_pulsing_text ">Open on a Web3 browser &rarr;</p>
+
+   <div class="centered_image overflow-hidden">
+                <img src="./img/first_main_portfolio_picture-removebg-preview.png" class="graciousPortfolioImg" alt="">
+            </div>
+
+        .centered_image{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    /* border: 4px solid pink; */
+    height: 80%;
+    width : 80%;
+    margin-left: -5vh;
+    filter:drop-shadow( 0px 0px 30px #4444dd);
+    /* filter:drop-shadow( 0px 10px 10px #4444dd); */
+    /* filter:drop-shadow( 0px 10px 70px rgb(198, 221, 68)); */
+    z-index: -10;
+}
