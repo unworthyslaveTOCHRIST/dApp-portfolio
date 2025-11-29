@@ -29,6 +29,12 @@
         transform: scaleY(1);
     }
   }
+  body{
+    max-width: 100vh;
+    overflow: hidden;
+  }
+
+
   .gtljc_dev_name{
     /* animation: bounce-for-christ 1s infinite; */
     font-size: 3dvh;
@@ -116,6 +122,7 @@ section{
     animation: rotate_ 20s linear infinite;
     margin-left: -5vh;
     margin-right: auto;
+
     
 }
 .graciousPortfolioImg{
