@@ -853,14 +853,14 @@
     }
   }
   .gtljc_pulsing_text {
-    animation: pulsation_FORCHRISTALONE 1s ease-in-out 0s infinite;
+    animation: pulsation_FORCHRISTALONE 1s ease-in-out 0s infinite normal;
   }
   @keyframes pulsation_FORCHRISTALONE {
     from {
       color: red;
     }
     to {
-      color: blue;
+      color: rgba(120, 120, 120, 0.286);
     }
   }
 }
