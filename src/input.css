@@ -31,9 +31,9 @@
   }
   .gtljc_dev_name{
     /* animation: bounce-for-christ 1s infinite; */
-    /* font-size: 4vw; */
-    width : 100%;
-    font-size: 2rem
+    font-size: 3dvh;
+    /* width : 100%;
+    font-size: 2rem */
   }
 
   .animate-bounce-for-christ {
